@@ -10,14 +10,17 @@
 </head>
 <body>
   <div id="app">
-    
+
+    <div class="modal">
+      {{product}}
+    </div>    
 
     <section class="products">
-      <div v-for="product in products" :key="product.id" class="product">
-        <img :src="product.img" :alt="product.nome" class="product_img">
+      <div v-for="item in products" @click="fetchProduct(item.id)" :key="item.id" class="product">
+        <img :src="item.img" :alt="item.nome" class="product_img">
         <div class="product_info">
-          <span class="product_price">{{product.preco | formatCurrency}}</span>
-          <h2 class="product_title">{{product.nome}}</h2>
+          <span class="product_price">{{item.preco | formatCurrency}}</span>
+          <h2 class="product_title">{{item.nome}}</h2>
         </div>
       </div>
     </section>

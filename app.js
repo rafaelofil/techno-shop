@@ -2,6 +2,7 @@ const vm = new Vue({
   el: "#app",
   data: {
     products: [],
+    product: false,
   },
   filters: {
     formatCurrency(value) {
@@ -12,15 +13,22 @@ const vm = new Vue({
     },
   },
   methods: {
-    fecthProduct() {
+    fetchProducts() {
       fetch("./api/products.json")
         .then((r) => r.json())
         .then((r) => {
           this.products = r;
         });
     },
+    fetchProduct(id) {
+      fetch(`./api/products/${id}/data.json`)
+        .then((r) => r.json())
+        .then((r) => {
+          this.product = r;
+        });
+    },
   },
   created() {
-    this.fecthProduct();
+    this.fetchProducts();
   },
 });

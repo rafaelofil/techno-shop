@@ -16,7 +16,7 @@
       <div v-for="product in products" :key="product.id" class="product">
         <img :src="product.img" :alt="product.nome" class="product_img">
         <div class="product_info">
-          <span class="product_price">{{product.preco}}</span>
+          <span class="product_price">{{product.preco | formatCurrency}}</span>
           <h2 class="product_title">{{product.nome}}</h2>
         </div>
       </div>

@@ -1,20 +1,20 @@
 {
   "id": "notebook",
-  "nome": "Notebook",
-  "preco": 2999,
-  "descricao": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
-  "estoque": 12,
+  "name": "Notebook",
+  "price": 2999,
+  "description": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "stock": 12,
   "img": "./api/products/notebook/notebook-foto.jpg",
   "reviews": [
     {
-      "nome": "Fábio",
-      "estrelas": 5,
-      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades"
+      "name": "Fábio",
+      "stars": 5,
+      "description": "Gostei muito do produto, atendeu todas as minhas necessidades"
     },
     {
-      "nome": "Fábio",
-      "estrelas": 5,
-      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades"
+      "name": "Fábio",
+      "stars": 5,
+      "description": "Gostei muito do produto, atendeu todas as minhas necessidades"
     }
   ]
 }

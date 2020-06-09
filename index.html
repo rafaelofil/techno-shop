@@ -14,20 +14,20 @@
     <div class="modal" v-if="product">
       <div class="modal_container">
         <div class="modal_img">
-          <img :src="product.img" :alt="product.nome"></img>
+          <img :src="product.img" :alt="product.name"></img>
         </div>
         <div class="modal_data">
-          <span class="modal_price">{{product.preco}}</span>
-          <h2 class="modal_title">{{product.nome}}</h2>
-          <p>{{product.descricao}}</p>
+          <span class="modal_price">{{product.price}}</span>
+          <h2 class="modal_title">{{product.name}}</h2>
+          <p>{{product.description}}</p>
           <button class="modal_btn">Adicionar Item</button>
         </div>
         <div class="reviews">
-          <h2 class="reviews_subtitle">Avaliações</h2>
+          <h2 class="review_subtitle">Avaliações</h2>
           <ul>
-            <li v-for="review in product.reviews" class="reviews">
-            <p class="review_description">{{review.descricao}}</p>
-            <p class="review_user">{{review.nome}} | {{review.estrelas}} estrelas</p>
+            <li v-for="review in product.reviews" class="review">
+            <p class="review_description">{{review.description}}</p>
+            <p class="review_user">{{review.name}} | {{review.stars}} estrelas</p>
             </li>
           </ul>
         </div>
@@ -36,10 +36,10 @@
 
     <section class="products">
       <div v-for="item in products" @click="fetchProduct(item.id)" :key="item.id" class="product">
-        <img :src="item.img" :alt="item.nome" class="product_img">
+        <img :src="item.img" :alt="item.name" class="product_img">
         <div class="product_info">
-          <span class="product_price">{{item.preco | formatCurrency}}</span>
-          <h2 class="product_title">{{item.nome}}</h2>
+          <span class="product_price">{{item.price | formatCurrency}}</span>
+          <h2 class="product_title">{{item.name}}</h2>
         </div>
       </div>
     </section>

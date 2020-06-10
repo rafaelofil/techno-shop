@@ -3,6 +3,8 @@ const vm = new Vue({
   data: {
     products: [],
     product: false,
+    cart: [],
+    cartTotal: 0,
   },
   filters: {
     formatCurrency(value) {
@@ -36,6 +38,15 @@ const vm = new Vue({
     },
     closeModal({ target, currentTarget }) {
       if (target === currentTarget) this.product = false;
+    },
+    addItem() {
+      this.product.stock--;
+
+      const { id, name, price } = this.product;
+      this.cart.push({ id, name, price });
+    },
+    removeItem(index) {
+      this.cart.splice(index, 1);
     },
   },
   created() {

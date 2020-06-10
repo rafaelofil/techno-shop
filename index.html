@@ -13,7 +13,12 @@
 
     <header class="header"> 
       <img class="logo" src="./assets/techno.svg" alt="Techno">
-      <div class="cart_menu">{{cartTotal}} | <div>
+      <div class="cart_menu">{{cartTotal}} | {{cart.length}}<div>
+      <ul>
+        <li v-for="item,index in cart">
+        <p>{{item.name}}</p>
+        <button @click="removeItem(index)">X</button>
+      </ul>
     </header>
 
     <section class="products">
@@ -36,7 +41,8 @@
           <span class="modal_price">{{product.price}}</span>
           <h2 class="modal_title">{{product.name}}</h2>
           <p>{{product.description}}</p>
-          <button class="modal_btn">Adicionar Item</button>
+          <button v-if="product.stock > 0" class="modal_btn" @click="addItem">Adicionar Item</button>
+          <button v-else class="modal_btn sold_off" disabled>Produto Esgotado</button>
         </div>
         <div class="reviews">
           <h2 class="review_subtitle">Avaliações</h2>

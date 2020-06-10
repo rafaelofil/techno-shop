@@ -11,7 +11,22 @@
 <body>
   <div id="app">
 
-    <div @click="closeModal" class="modal" v-if="product">
+    <header class="header"> 
+      <img class="logo" src="./assets/techno.svg" alt="Techno">
+      <div class="cart_menu">{{cartTotal}} | <div>
+    </header>
+
+    <section class="products">
+      <div v-for="item in products" @click="openModal(item.id)" :key="item.id" class="product">
+        <img :src="item.img" :alt="item.name" class="product_img">
+        <div class="product_info">
+          <span class="product_price">{{item.price | formatCurrency}}</span>
+          <h2 class="product_title">{{item.name}}</h2>
+        </div>
+      </div>
+    </section>
+
+        <div @click="closeModal" class="modal" v-if="product">
       <div class="modal_container">
         <div class="modal_img">
           <img :src="product.img" :alt="product.name"></img>
@@ -33,17 +48,7 @@
           </ul>
         </div>
       </div>
-    </div>    
-
-    <section class="products">
-      <div v-for="item in products" @click="openModal(item.id)" :key="item.id" class="product">
-        <img :src="item.img" :alt="item.name" class="product_img">
-        <div class="product_info">
-          <span class="product_price">{{item.price | formatCurrency}}</span>
-          <h2 class="product_title">{{item.name}}</h2>
-        </div>
-      </div>
-    </section>
+    </div>  
 
   </div>
 

@@ -8,7 +8,7 @@ const vm = new Vue({
   },
   filters: {
     formatCurrency(value) {
-      return value.toLocaleString("en-BR", {
+      return value.toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL",
       });

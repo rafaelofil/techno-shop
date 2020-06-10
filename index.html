@@ -38,7 +38,7 @@
         </div>
         <div class="modal_data">
           <button @click="product = !product" class="modal_close">X</button>
-          <span class="modal_price">{{product.price}}</span>
+          <span class="modal_price">{{product.price | formatCurrency}}</span>
           <h2 class="modal_title">{{product.name}}</h2>
           <p>{{product.description}}</p>
           <button v-if="product.stock > 0" class="modal_btn" @click="addItem">Adicionar Item</button>
@@ -55,6 +55,10 @@
         </div>
       </div>
     </div>  
+
+    <div class="alert" :class="{active: alertActive}">
+      <p class="alert_message"> {{messageAlert}}</p>
+    </div>
 
   </div>
 

@@ -13,7 +13,7 @@
 
     <header class="header"> 
       <img class="logo" src="./assets/techno.svg" alt="Techno">
-      <div class="cart_menu">{{cartTotal}} | {{cart.length}}<div>
+      <div class="cart_menu">{{cartTotal | formatCurrency}} | {{cart.length}}<div>
       <ul>
         <li v-for="item,index in cart">
         <p>{{item.name}}</p>

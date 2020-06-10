@@ -4,7 +4,6 @@ const vm = new Vue({
     products: [],
     product: false,
     cart: [],
-    cartTotal: 0,
   },
   filters: {
     formatCurrency(value) {
@@ -12,6 +11,19 @@ const vm = new Vue({
         style: "currency",
         currency: "BRL",
       });
+    },
+  },
+  computed: {
+    cartTotal() {
+      let total = 0;
+
+      if (this.cart.length) {
+        this.cart.forEach((item) => {
+          total += item.price;
+        });
+      }
+
+      return total;
     },
   },
   methods: {

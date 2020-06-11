@@ -1,5 +1,14 @@
+<h1 align="center">
+  Techno Shop
+</h1>
 
-
+<h1 align="center">
+  <p align="center">
+    <img src='./img/techno-gif.gif'>
+    <img src="./img/responsive.gif" height="310">
+    <img src='./img/techno.jpg'>
+    <img src="./img/techno.jpg" height="310"> 
+  </p>
 # Techno-Shop
 Front-end by technology e-commerce.
 

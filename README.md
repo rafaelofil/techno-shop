@@ -4,8 +4,8 @@
 
 <h1 align="center">
   <p align="center" display="flex">
-    <img src='./assets/techno-home.jpg' width="450">
-    <img src="./assets/techno-modal.jpg" width="450"> 
+    <img src='./assets/techno-home.jpg' width="445">
+    <img src="./assets/techno-modal.jpg" width="445"> 
   </p>
 </h1> 
 

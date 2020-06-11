@@ -3,18 +3,19 @@
 </h1>
 
 <h1 align="center">
+  <p align="center" display="flex">
+    <img src='./assets/techno-home.jpg' width="200">
+    <img src="./assets/techno-modal.jpg" width="200" height="310"> 
+  </p>
+</h1> 
+
+<h1 align="center">
   <p display="flex">
-    <img src='./assets/techno.gif' max-width="300">
-    <img src="./assets/responsive.gif" max-width="300" height="310">
+    <img src='./assets/techno.gif' width="200">
+    <img src="./assets/responsive.gif" width="200" height="310">
   </p>
 </h1>
 
-<h1 align="center">
-  <p align="center" display="flex">
-    <img src='./assets/techno-home.jpg' max-width="300">
-    <img src="./assets/techno-modal.jpg" max-width="300" height="310"> 
-  </p>
-</h1> 
  
 # Techno-Shop
 Front-end by technology e-commerce.

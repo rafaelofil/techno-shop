@@ -4,15 +4,15 @@
 
 <h1 align="center">
   <p align="center">
-    <img src='./assets/techno.gif'>
-    <img src="./assets/responsive.gif" height="310">
+    <img src='./assets/techno.gif' max-width="300">
+    <img src="./assets/responsive.gif" max-width="300" height="310">
   </p>
 </h1>
 
 <h1 align="center">
   <p align="center">
-    <img src='./assets/techno-home.jpg'>
-    <img src="./assets/techno-modal.jpg" height="310"> 
+    <img src='./assets/techno-home.jpg' max-width="300">
+    <img src="./assets/techno-modal.jpg" max-width="300" height="310"> 
   </p>
 </h1> 
  

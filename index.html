@@ -12,8 +12,8 @@
   <div id="app">
 
     <header class="header"> 
-      <img class="logo" src="./assets/techno.svg" alt="Techno">
-      <div class="cart_menu">{{cartTotal | formatCurrency}} | {{cart.length}}<div>
+      <img class="logo" src="./assets/techno.svg" alt="Techno"/>
+      <div class="cart_menu" @click="cartActive = !cartActive">{{cartTotal | formatCurrency}} | {{cart.length}}</div>
     </header>
 
     <section class="products">

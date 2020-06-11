@@ -4,7 +4,7 @@ const vm = new Vue({
     products: [],
     product: false,
     cart: [],
-    cartActive: true,
+    cartActive: false,
     messageAlert: "Item adicionado",
     alertActive: false,
   },
@@ -55,7 +55,7 @@ const vm = new Vue({
       if (target === currentTarget) this.product = false;
     },
     clickOutCart({ target, currentTarget }) {
-      if (target === currentTarget) this.cart = false;
+      if (target === currentTarget) this.cartActive = false;
     },
     addItem() {
       this.product.stock--;

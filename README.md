@@ -37,7 +37,7 @@ $ live-server
 
 ## Status
 
-Project is: in progress, i'll refactor the project.
+Project is: in progress, I'll refactor the project.
 
 ## Final considerations
 

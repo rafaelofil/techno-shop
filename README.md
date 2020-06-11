@@ -4,11 +4,12 @@
 
 <h1 align="center">
   <p align="center">
-    <img src='./img/techno-gif.gif'>
-    <img src="./img/responsive.gif" height="310">
-    <img src='./img/techno.jpg'>
-    <img src="./img/techno.jpg" height="310"> 
+    <img src='./assets/techno-gif.gif'>
+    <img src="./assets/responsive.gif" height="310">
+    <img src='./assets/techno.jpg'>
+    <img src="./assets/techno.jpg" height="310"> 
   </p>
+</h1>
 # Techno-Shop
 Front-end by technology e-commerce.
 

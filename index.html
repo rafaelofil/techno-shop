@@ -26,7 +26,7 @@
       </div>
     </section>
 
-        <div @click="closeModal" class="modal" v-if="product">
+    <div @click="closeModal" class="modal" v-if="product">
       <div class="modal_container">
         <div class="modal_img">
           <img :src="product.img" :alt="product.name"></img>
@@ -60,7 +60,7 @@
             <li v-for="item,index in cart" class="cart_item">
               <p>{{item.name}}</p>
               <p class="cart_price">{{item.price | formatCurrency}}</p>
-              <button @click="removeItem(index)">X</button>
+              <button class="cart_remove" @click="removeItem(index)">X</button>
             </li>
           </ul>
           <p class="cart_total">{{cartTotal | formatCurrency}}</p>

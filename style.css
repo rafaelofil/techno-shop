@@ -128,7 +128,8 @@ body {
   }
 }
 
-.modal_close {
+.modal_close,
+.cart_close {
   border-radius: 50%;
   border: 2px solid #000;
   width: 40px;
@@ -278,4 +279,37 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.cart_title {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000000;
+}
+
+.cart_remove {
+  background: #ffffff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cart_total {
+  text-align: right;
+  padding: 10px 50px 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+}
+
+.cart_finish {
+  display: block;
+  margin-left: auto;
+  background: #000;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border: none;
+  font-family: "Noto serif";
 }

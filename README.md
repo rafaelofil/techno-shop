@@ -62,4 +62,5 @@ Project is: in progress, I'll refactor the project.
 
 Any feedback is welcome.
 
-I hope you enjoy ;)
+Made by <b>Rafael Filho</b>
+<hr> <p align="center"> I hope you enjoy 😎</p>

@@ -1,6 +1,9 @@
-<h1 align="center">
-  Techno Shop
-</h1>
+<div>
+  <h1 align="left">
+    Techno Shop
+  </h1>
+Front-end by technology e-commerce.
+</div>
 
 <h1 align="center">
   <p align="center" display="flex">
@@ -16,9 +19,6 @@
   </p>
 </h1>
 
- 
-# Techno-Shop
-Front-end by technology e-commerce.
 
 ## Table of contents
 * [General info](#general-info)
@@ -28,10 +28,10 @@ Front-end by technology e-commerce.
 * [Final Considerations](#final-considerations)
 
 ## General Info
-This website was create with purpose to review concepts about vue and put figure out how works the framework.
-I didn't use vue cli, because I would wanna build structure of vue manually.
+This website was create with purpose to review concepts about vue and figure out how works the framework.
+I didn't use vue cli, because I would wanted build structure manually.
 
-Is possible to simulation addition and remove of items in shop cart.
+It's possible to simulation addition and remotion of items in shop cart.
 
 ## Technologies
 Project is created with:
@@ -56,7 +56,7 @@ $ live-server
 
 ## Status
 
-Project is: in progress, I'll refactor the project.
+Project is: finish, but if I have any inspiration I will add.
 
 ## Final considerations
 

@@ -12,13 +12,6 @@ Front-end by technology e-commerce.
   </p>
 </h1> 
 
-<h1 align="center">
-  <p display="flex">
-    <img src='./assets/techno.gif' width="580">
-    <img src="./assets/responsive.gif" height="350">
-  </p>
-</h1>
-
 
 ## Table of contents
 * [General info](#general-info)
